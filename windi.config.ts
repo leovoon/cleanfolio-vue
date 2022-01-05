@@ -1,9 +1,24 @@
 /* eslint-disable quote-props */
 import { defineConfig } from 'windicss/helpers'
+import scrollSnapPlugin from 'windicss/plugin/scroll-snap'
+import plugin from 'windicss/plugin'
 
 export default defineConfig({
   darkMode: 'class',
   attributify: false,
+  plugins: [
+    plugin(({ addUtilities }) => {
+      const newUtilities = {
+        'pix': {
+          paddingInlineEnd: '1px',
+          paddingInlineStart: '1px',
+        },
+      }
+      addUtilities(newUtilities)
+    }),
+    scrollSnapPlugin,
+
+  ],
   theme: {
     colors: {
       'blue-primary': '#2978B5',

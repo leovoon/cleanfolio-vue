@@ -15,9 +15,9 @@
     "@vueuse/core": "^7.4.1",
     "@vueuse/head": "^0.7.4",
     "nprogress": "^0.2.0",
-    "pinia": "^2.0.9",
     "vue": "^3.2.26",
     "vue-demi": "^0.12.1",
+    "vue-pose": "^0.5.1",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
